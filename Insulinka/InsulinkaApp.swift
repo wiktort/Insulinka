@@ -11,11 +11,10 @@ import SwiftUI
 struct InsulinkaApp: App {
 //    let persistenceController = PersistenceController.shared
     
-    @StateObject var viewRouter = ViewRouter()
 
     var body: some Scene {
         WindowGroup {
-            MainView(viewRouter: viewRouter)
+            MainView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .foregroundColor(Color("FontColor"))
         }
