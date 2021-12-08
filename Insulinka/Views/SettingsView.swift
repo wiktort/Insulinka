@@ -8,10 +8,17 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @StateObject var settings = SettingsModel.shared;
     var body: some View {
         VStack(){
-            TextField("Wprowadź swoje imię", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-            TextField("Wprowadź współczynnik węglowodanowy", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+            Form {
+                Section{
+                    Label("Dane użytkownika", systemImage: "person.crop.circle")
+                    TextInput(placeholder: "Wprowadź swoje imię", value: $settings.userName)
+                    Label("Współczynnik węglowodanowy", systemImage: "doc.text.below.ecg")
+                    NumberInput(placeholder: "Wprowadź współczynnik węglowodanowy", value: $settings.carbohydrateRatio)
+                 }
+            }
         }
     }
 }

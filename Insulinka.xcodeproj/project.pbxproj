@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		64287247275A902F005BC5A5 /* MealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64287246275A902F005BC5A5 /* MealsView.swift */; };
+		64287249275A9E97005BC5A5 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64287248275A9E97005BC5A5 /* TextInput.swift */; };
+		6428724B275AB489005BC5A5 /* NameInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6428724A275AB489005BC5A5 /* NameInput.swift */; };
+		6428725627614128005BC5A5 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6428725527614128005BC5A5 /* DataController.swift */; };
 		646BB7A22753616100B8D888 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646BB7A12753616100B8D888 /* SettingsView.swift */; };
 		64AB4CA52737BB2E008B0F2D /* InsulinkaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CA42737BB2E008B0F2D /* InsulinkaApp.swift */; };
-		64AB4CA72737BB2E008B0F2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CA62737BB2E008B0F2D /* ContentView.swift */; };
 		64AB4CA92737BB31008B0F2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64AB4CA82737BB31008B0F2D /* Assets.xcassets */; };
 		64AB4CAC2737BB31008B0F2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64AB4CAB2737BB31008B0F2D /* Preview Assets.xcassets */; };
-		64AB4CAE2737BB31008B0F2D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CAD2737BB31008B0F2D /* Persistence.swift */; };
 		64AB4CB12737BB31008B0F2D /* Insulinka.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CAF2737BB31008B0F2D /* Insulinka.xcdatamodeld */; };
 		64AB4CD92737C297008B0F2D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CD82737C297008B0F2D /* MainView.swift */; };
 		64AB4CDD2737C2D2008B0F2D /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CDC2737C2D2008B0F2D /* StartView.swift */; };
@@ -46,13 +47,14 @@
 
 /* Begin PBXFileReference section */
 		64287246275A902F005BC5A5 /* MealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsView.swift; sourceTree = "<group>"; };
+		64287248275A9E97005BC5A5 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		6428724A275AB489005BC5A5 /* NameInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInput.swift; sourceTree = "<group>"; };
+		6428725527614128005BC5A5 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		646BB7A12753616100B8D888 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		64AB4CA12737BB2E008B0F2D /* Insulinka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insulinka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64AB4CA42737BB2E008B0F2D /* InsulinkaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinkaApp.swift; sourceTree = "<group>"; };
-		64AB4CA62737BB2E008B0F2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		64AB4CA82737BB31008B0F2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64AB4CAB2737BB31008B0F2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		64AB4CAD2737BB31008B0F2D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		64AB4CB02737BB31008B0F2D /* Insulinka.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Insulinka.xcdatamodel; sourceTree = "<group>"; };
 		64AB4CB62737BB31008B0F2D /* InsulinkaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsulinkaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64AB4CBA2737BB31008B0F2D /* InsulinkaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinkaTests.swift; sourceTree = "<group>"; };
@@ -123,8 +125,7 @@
 				64AB4CA82737BB31008B0F2D /* Assets.xcassets */,
 				64AB4CA42737BB2E008B0F2D /* InsulinkaApp.swift */,
 				64AB4CD82737C297008B0F2D /* MainView.swift */,
-				64AB4CA62737BB2E008B0F2D /* ContentView.swift */,
-				64AB4CAD2737BB31008B0F2D /* Persistence.swift */,
+				6428725527614128005BC5A5 /* DataController.swift */,
 				64AB4CAF2737BB31008B0F2D /* Insulinka.xcdatamodeld */,
 				64AB4CAA2737BB31008B0F2D /* Preview Content */,
 			);
@@ -171,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				64B12AA92740F12800D80D1A /* NumberInput.swift */,
+				64287248275A9E97005BC5A5 /* TextInput.swift */,
+				6428724A275AB489005BC5A5 /* NameInput.swift */,
 			);
 			path = Atoms;
 			sourceTree = "<group>";
@@ -328,13 +331,14 @@
 				64B12AAF2740F1CE00D80D1A /* SettingsModel.swift in Sources */,
 				64B12AAD2740F18700D80D1A /* InsulinCalculatorModel.swift in Sources */,
 				64AB4CB12737BB31008B0F2D /* Insulinka.xcdatamodeld in Sources */,
-				64AB4CAE2737BB31008B0F2D /* Persistence.swift in Sources */,
-				64AB4CA72737BB2E008B0F2D /* ContentView.swift in Sources */,
 				64B12AA72740F0CB00D80D1A /* InsulinCalculatorView.swift in Sources */,
+				6428725627614128005BC5A5 /* DataController.swift in Sources */,
+				6428724B275AB489005BC5A5 /* NameInput.swift in Sources */,
 				64AB4CA52737BB2E008B0F2D /* InsulinkaApp.swift in Sources */,
 				64B12AAA2740F12800D80D1A /* NumberInput.swift in Sources */,
 				64AB4CDD2737C2D2008B0F2D /* StartView.swift in Sources */,
 				646BB7A22753616100B8D888 /* SettingsView.swift in Sources */,
+				64287249275A9E97005BC5A5 /* TextInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

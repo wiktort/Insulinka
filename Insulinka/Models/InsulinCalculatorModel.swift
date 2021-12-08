@@ -6,9 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
 
 class InsulinCalculatorModel: ObservableObject {
-    private var carbohydrateRatio = SettingsModel.Singleton.carbohydrateRatio;
+    @ObservedObject private var settings = SettingsModel.shared;
+    var carbohydrateRatio: Float32 {
+        settings.carbohydrateRatio
+    }
     @Published var proteins: Float32 = 0.00;
     @Published var fats: Float32 = 0.00;
     @Published var carbs: Float32 = 0.00;

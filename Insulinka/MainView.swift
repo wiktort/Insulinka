@@ -7,17 +7,15 @@
 
 import SwiftUI
 import Foundation
+import CoreData
 
 struct MainView: View {
     var body: some View {
-
-        
         TabView {
             StartView()
                 .tabItem({
                     Image(systemName: "house").resizable()
                     Text("Start")
-                        
                 })
             InsulinCalculatorView()
                 .tabItem({
@@ -36,7 +34,7 @@ struct MainView: View {
                 })
                 
         }.accentColor(Color("CtaFontColor"))
-    }
+        }
 }
 
 struct MotherView_Previews: PreviewProvider {

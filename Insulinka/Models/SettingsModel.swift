@@ -9,8 +9,20 @@ import Foundation
 
 // The SettingsModel is a Singleton
 class SettingsModel: ObservableObject {
-    static let Singleton = SettingsModel();
-    @Published var userName: String = "userName";
-    @Published var carbohydrateRatio: Float32 = 12.00;
+    static let shared = SettingsModel();
+    @Published var userName: String {
+        didSet{
+            UserDefaults.standard.set(userName, forKey: "userName")
+        }
+    }
+    @Published var carbohydrateRatio: Float32 {
+        didSet{
+            UserDefaults.standard.set(carbohydrateRatio, forKey: "carbohydrateRatio")
+        }
+    }
     
+    private init(){
+        self.userName = UserDefaults.standard.string(forKey: "userName")!
+        self.carbohydrateRatio = UserDefaults.standard.float(forKey: "carbohydrateRatio")
+    }
 }

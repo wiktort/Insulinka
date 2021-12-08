@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct StartView: View {
-    private let userName: String = SettingsModel.Singleton.userName;
-
+    @StateObject private var settings = SettingsModel.shared
 
     var body: some View {
         VStack(){
@@ -17,7 +16,7 @@ struct StartView: View {
                 .resizable()
                 .aspectRatio( contentMode: .fit)
                 .accessibilityLabel("logo")
-            Text("Cześć, " + userName + "!")
+            Text("Cześć, " + settings.userName + "!")
                 .font(.title)
                 .foregroundColor(Color("CtaFontColor"))
                 .fontWeight(Font.Weight.bold)
