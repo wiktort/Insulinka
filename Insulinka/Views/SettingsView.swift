@@ -10,15 +10,18 @@ import SwiftUI
 struct SettingsView: View {
     @StateObject var settings = SettingsModel.shared;
     var body: some View {
-        VStack(){
-            Form {
-                Section{
+        NavigationView {
+            Form() {
+                
+                Section(header: Text("Profil")){
                     Label("Dane użytkownika", systemImage: "person.crop.circle")
                     TextInput(placeholder: "Wprowadź swoje imię", value: $settings.userName)
+                 }
+                Section(header: Text("Ustawienia kalkulatora")){
                     Label("Współczynnik węglowodanowy", systemImage: "doc.text.below.ecg")
                     NumberInput(placeholder: "Wprowadź współczynnik węglowodanowy", value: $settings.carbohydrateRatio)
-                 }
-            }
+                }
+            }.navigationTitle("Ustawienia")
         }
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 // The SettingsModel is a Singleton
 class SettingsModel: ObservableObject {
@@ -21,7 +22,14 @@ class SettingsModel: ObservableObject {
         }
     }
     
+    
     private init(){
+        UserDefaults.standard.register(
+            defaults: [
+                "userName": UIDevice.current.name,
+                "carbohydrateRatio": 12.00
+            ]
+        )
         self.userName = UserDefaults.standard.string(forKey: "userName")!
         self.carbohydrateRatio = UserDefaults.standard.float(forKey: "carbohydrateRatio")
     }
