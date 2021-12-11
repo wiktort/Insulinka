@@ -26,6 +26,9 @@
 		64B12AAD2740F18700D80D1A /* InsulinCalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B12AAC2740F18700D80D1A /* InsulinCalculatorModel.swift */; };
 		64B12AAF2740F1CE00D80D1A /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B12AAE2740F1CE00D80D1A /* SettingsModel.swift */; };
 		64B12AB22740F48600D80D1A /* preciseRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B12AB12740F48600D80D1A /* preciseRound.swift */; };
+		64F245A62764A6ED00F3DDA4 /* hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F245A52764A6EC00F3DDA4 /* hideKeyboard.swift */; };
+		64F245AA2764B42900F3DDA4 /* ErrorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F245A92764B42900F3DDA4 /* ErrorTypes.swift */; };
+		64F245AC2764BC7000F3DDA4 /* ErrorBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F245AB2764BC7000F3DDA4 /* ErrorBoundary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		64B12AAC2740F18700D80D1A /* InsulinCalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinCalculatorModel.swift; sourceTree = "<group>"; };
 		64B12AAE2740F1CE00D80D1A /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		64B12AB12740F48600D80D1A /* preciseRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = preciseRound.swift; sourceTree = "<group>"; };
+		64F245A52764A6EC00F3DDA4 /* hideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hideKeyboard.swift; sourceTree = "<group>"; };
+		64F245A92764B42900F3DDA4 /* ErrorTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTypes.swift; sourceTree = "<group>"; };
+		64F245AB2764BC7000F3DDA4 /* ErrorBoundary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorBoundary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,8 @@
 		64AB4CA32737BB2E008B0F2D /* Insulinka */ = {
 			isa = PBXGroup;
 			children = (
+				64F245A82764B41000F3DDA4 /* ErrorBoundary */,
+				64F245A72764A77A00F3DDA4 /* Extensions */,
 				64B12AA82740F10400D80D1A /* Atoms */,
 				64B12AB02740F46900D80D1A /* Helpers */,
 				64AB4CD32737C1D1008B0F2D /* Views */,
@@ -193,6 +201,23 @@
 				64B12AB12740F48600D80D1A /* preciseRound.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		64F245A72764A77A00F3DDA4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				64F245A52764A6EC00F3DDA4 /* hideKeyboard.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64F245A82764B41000F3DDA4 /* ErrorBoundary */ = {
+			isa = PBXGroup;
+			children = (
+				64F245A92764B42900F3DDA4 /* ErrorTypes.swift */,
+				64F245AB2764BC7000F3DDA4 /* ErrorBoundary.swift */,
+			);
+			path = ErrorBoundary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,10 +356,13 @@
 				64B12AAF2740F1CE00D80D1A /* SettingsModel.swift in Sources */,
 				64B12AAD2740F18700D80D1A /* InsulinCalculatorModel.swift in Sources */,
 				64AB4CB12737BB31008B0F2D /* Insulinka.xcdatamodeld in Sources */,
+				64F245AC2764BC7000F3DDA4 /* ErrorBoundary.swift in Sources */,
 				64B12AA72740F0CB00D80D1A /* InsulinCalculatorView.swift in Sources */,
 				6428725627614128005BC5A5 /* DataController.swift in Sources */,
 				6428724B275AB489005BC5A5 /* NameInput.swift in Sources */,
 				64AB4CA52737BB2E008B0F2D /* InsulinkaApp.swift in Sources */,
+				64F245AA2764B42900F3DDA4 /* ErrorTypes.swift in Sources */,
+				64F245A62764A6ED00F3DDA4 /* hideKeyboard.swift in Sources */,
 				64B12AAA2740F12800D80D1A /* NumberInput.swift in Sources */,
 				64AB4CDD2737C2D2008B0F2D /* StartView.swift in Sources */,
 				646BB7A22753616100B8D888 /* SettingsView.swift in Sources */,

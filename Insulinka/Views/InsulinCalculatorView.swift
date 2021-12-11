@@ -27,9 +27,9 @@ struct InsulinCalculatorView: View {
             Form {
                 Section{
                     Text("Podaj ilość gram makro składników na 100g posiłku").padding()
-                    Label("Tłuszcze", systemImage: "2.circle")
+                    Label("Tłuszcze", systemImage: "1.circle")
                     NumberInput(value: $calculatorEngine.fats)
-                    Label("Białka", systemImage: "1.circle")
+                    Label("Białka", systemImage: "2.circle")
                     NumberInput(value: $calculatorEngine.proteins)
                     Label("Węglowodany", systemImage: "3.circle")
                     NumberInput(value: $calculatorEngine.carbs)
@@ -45,8 +45,9 @@ struct InsulinCalculatorView: View {
                         .padding()
                 }
             }
+        }.onTapGesture {
+            self.hideKeyboard()
         }
-        
     }
 }
 
