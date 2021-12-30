@@ -9,6 +9,7 @@ import Foundation
 
 public enum ErrorType: Error {
     case invalidCarbohydrateRatio
+    case saveViewContextError
     case unkownError
 }
 
@@ -17,6 +18,8 @@ extension ErrorType: LocalizedError {
         switch self {
         case .invalidCarbohydrateRatio:
             return NSLocalizedString("Współczynnik węglowodanowy musi być liczbą dodatnią", comment: "ErrorType")
+        case .saveViewContextError:
+            return NSLocalizedString("Wystąpił błąd podczas zapisywania kontekstu", comment: "ErrorType")
         case .unkownError:
             return NSLocalizedString("Nieznany błąd", comment: "ErrorType" )
         }

@@ -16,7 +16,7 @@ struct SettingsView: View {
         NavigationView {
             Form() {
                 Section(header: Text("Profil")){
-                    Label("Dane użytkownika", systemImage: "person.crop.circle")
+                    Label("Nazwa użytkownika", systemImage: "person.crop.circle")
                     TextInput(placeholder: "Wprowadź swoje imię", value: $settings.userName)
                  }
                 Section(header: Text("Ustawienia kalkulatora")){

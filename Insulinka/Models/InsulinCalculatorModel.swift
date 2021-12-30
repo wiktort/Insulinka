@@ -16,6 +16,10 @@ class InsulinCalculatorModel: ObservableObject {
     @Published var carbs: Float32? = nil;
     @Published var mealWeightInGrams: Float32? = nil;
     
+    var hasAllProperties: Bool {
+        proteins != nil && fats != nil && carbs != nil
+    }
+    
     var insulinDosePer100G: Float32 {
         let proteinDose = (proteins ?? 0.00) * 4 / 100;
         let fatDose = (fats ?? 0.00) * 9 / 100;
