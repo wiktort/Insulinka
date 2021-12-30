@@ -12,6 +12,9 @@
 		6428724B275AB489005BC5A5 /* NameInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6428724A275AB489005BC5A5 /* NameInput.swift */; };
 		6428725627614128005BC5A5 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6428725527614128005BC5A5 /* DataController.swift */; };
 		646BB7A22753616100B8D888 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646BB7A12753616100B8D888 /* SettingsView.swift */; };
+		649588EF2774DFC5003854E1 /* MealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649588EE2774DFC5003854E1 /* MealView.swift */; };
+		649588F1277C965B003854E1 /* SectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649588F0277C965B003854E1 /* SectionItem.swift */; };
+		649588F7277E1F92003854E1 /* TextPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649588F6277E1F92003854E1 /* TextPrompt.swift */; };
 		64AB4CA52737BB2E008B0F2D /* InsulinkaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CA42737BB2E008B0F2D /* InsulinkaApp.swift */; };
 		64AB4CA92737BB31008B0F2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64AB4CA82737BB31008B0F2D /* Assets.xcassets */; };
 		64AB4CAC2737BB31008B0F2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64AB4CAB2737BB31008B0F2D /* Preview Assets.xcassets */; };
@@ -54,6 +57,9 @@
 		6428724A275AB489005BC5A5 /* NameInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInput.swift; sourceTree = "<group>"; };
 		6428725527614128005BC5A5 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		646BB7A12753616100B8D888 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		649588EE2774DFC5003854E1 /* MealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealView.swift; sourceTree = "<group>"; usesTabs = 0; };
+		649588F0277C965B003854E1 /* SectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionItem.swift; sourceTree = "<group>"; };
+		649588F6277E1F92003854E1 /* TextPrompt.swift */ = {isa = PBXFileReference; indentWidth = 6; lastKnownFileType = sourcecode.swift; path = TextPrompt.swift; sourceTree = "<group>"; };
 		64AB4CA12737BB2E008B0F2D /* Insulinka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insulinka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64AB4CA42737BB2E008B0F2D /* InsulinkaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinkaApp.swift; sourceTree = "<group>"; };
 		64AB4CA82737BB31008B0F2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -172,6 +178,7 @@
 				64B12AA62740F0CB00D80D1A /* InsulinCalculatorView.swift */,
 				646BB7A12753616100B8D888 /* SettingsView.swift */,
 				64287246275A902F005BC5A5 /* MealsView.swift */,
+				649588EE2774DFC5003854E1 /* MealView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +189,8 @@
 				64B12AA92740F12800D80D1A /* NumberInput.swift */,
 				64287248275A9E97005BC5A5 /* TextInput.swift */,
 				6428724A275AB489005BC5A5 /* NameInput.swift */,
+				649588F0277C965B003854E1 /* SectionItem.swift */,
+				649588F6277E1F92003854E1 /* TextPrompt.swift */,
 			);
 			path = Atoms;
 			sourceTree = "<group>";
@@ -355,6 +364,7 @@
 				64AB4CD92737C297008B0F2D /* MainView.swift in Sources */,
 				64B12AAF2740F1CE00D80D1A /* SettingsModel.swift in Sources */,
 				64B12AAD2740F18700D80D1A /* InsulinCalculatorModel.swift in Sources */,
+				649588EF2774DFC5003854E1 /* MealView.swift in Sources */,
 				64AB4CB12737BB31008B0F2D /* Insulinka.xcdatamodeld in Sources */,
 				64F245AC2764BC7000F3DDA4 /* ErrorBoundary.swift in Sources */,
 				64B12AA72740F0CB00D80D1A /* InsulinCalculatorView.swift in Sources */,
@@ -366,6 +376,8 @@
 				64B12AAA2740F12800D80D1A /* NumberInput.swift in Sources */,
 				64AB4CDD2737C2D2008B0F2D /* StartView.swift in Sources */,
 				646BB7A22753616100B8D888 /* SettingsView.swift in Sources */,
+				649588F1277C965B003854E1 /* SectionItem.swift in Sources */,
+				649588F7277E1F92003854E1 /* TextPrompt.swift in Sources */,
 				64287249275A9E97005BC5A5 /* TextInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
