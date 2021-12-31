@@ -25,7 +25,7 @@ struct MainView: View {
             MealsView()
                 .tabItem({
                     Image(systemName: "fork.knife").resizable()
-                    Text("Posiłki")
+                    Text("Dania")
                 })
             SettingsView()
                 .tabItem({

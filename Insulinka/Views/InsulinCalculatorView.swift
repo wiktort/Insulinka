@@ -32,52 +32,48 @@ struct InsulinCalculatorView: View {
         
     var body: some View {
         ZStack{
-            VStack(){
-                Form {
-                    Section{
-                        Text("Podaj ilość gram makro składników na 100g posiłku").padding()
-                        Label("Tłuszcze", systemImage: "1.circle")
-                        NumberInput(value: $calculatorEngine.fats)
-                        Label("Białka", systemImage: "2.circle")
-                        NumberInput(value: $calculatorEngine.proteins)
-                        Label("Węglowodany", systemImage: "3.circle")
-                        NumberInput(value: $calculatorEngine.carbs)
-                        
-                        HStack{
-                            Button("Wyczyść", action: {
-                                calculatorEngine.fats = nil
-                                calculatorEngine.proteins = nil
-                                calculatorEngine.carbs = nil
-                            })
-                            Spacer()
-                            Button("Zapisz", action: {
-                                isPromptVisible = true
-                            })
-                                .disabled(!calculatorEngine.hasAllProperties)
-                                .foregroundColor(buttonColor)
-                        }.buttonStyle(BorderlessButtonStyle())
-                    }
-                    Section{
-                        Text("Waga całego posiłku w gramach")
-                        NumberInput(value: $calculatorEngine.mealWeightInGrams)
-                    }
-                    Section{
-                        Text("Dawka insuliny na 100g posiłku: " + insulinDosePer100GText)
-                            .padding()
-                        Text("Dawka insuliny na cały posiłek: " + insulinDosePerMealText)
-                            .padding()
-                    }
+            Form {
+                Section{
+                    InsulinCalculator(
+                    proteins: $calculatorEngine.proteins,
+                    fats: $calculatorEngine.fats,
+                    carbs: $calculatorEngine.carbs
+                    )
+                    
+                    HStack{
+                        Button("Wyczyść", action: {
+                            calculatorEngine.fats = nil
+                            calculatorEngine.proteins = nil
+                            calculatorEngine.carbs = nil
+                        })
+                        Spacer()
+                        Button("Zapisz", action: {
+                            isPromptVisible = true
+                        })
+                            .disabled(!calculatorEngine.hasAllProperties)
+                            .foregroundColor(buttonColor)
+                    }.buttonStyle(BorderlessButtonStyle())
                 }
-            }.onTapGesture {
-                self.hideKeyboard()
+                Section{
+                    Text("Waga całego dania w gramach")
+                    NumberInput(value: $calculatorEngine.mealWeightInGrams)
+                }
+                Section{
+                    Text("Dawka insuliny na 100g daniu: " + insulinDosePer100GText)
+                        .padding()
+                    Text("Dawka insuliny na cały daniu: " + insulinDosePerMealText)
+                        .padding()
+                }
             }
             
             TextPrompt(
-                title: "Zapisz posiłek",
-                message: "String",
+                title: "Zapisz danie",
+                message: "Podaj nazwę dania",
                 isVisible: $isPromptVisible,
                 onDone: addMeal
             )
+        }.onTapGesture {
+            self.hideKeyboard()
         }
     }
     

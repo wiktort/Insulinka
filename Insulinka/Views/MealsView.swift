@@ -16,7 +16,8 @@ struct MealsView: View {
         animation: .default)
     private var meals: FetchedResults<Meal>
 
-    @StateObject var errorBoundary = ErrorBoundary.shared;
+    @StateObject var errorBoundary = ErrorBoundary.shared
+    @State var isAddMealViewOpen = false
     @State var addButtonDisabled = false
     @State var isEditing = false
     
@@ -26,10 +27,8 @@ struct MealsView: View {
                 ForEach(meals, id: \.self) { meal in
                     NavigationLink(
                         destination: MealView(meal: meal)
-                            .onAppear {UITabBar.appearance().isHidden = false}
-                            .onDisappear {UITabBar.appearance().isHidden = true}
                     ) {
-                        Text(meal.name!)
+                        Text(meal.name ?? "")
                     }
                 }
                 .onDelete(perform: deleteMeal)
@@ -38,7 +37,10 @@ struct MealsView: View {
                 \.editMode,
                 .constant(self.isEditing ? EditMode.active : EditMode.inactive)
             )
-            .navigationTitle("Lista posiłków")
+            .navigationTitle("Lista dań")
+            .sheet(isPresented: $isAddMealViewOpen){
+                AddMealView(isVisible: $isAddMealViewOpen)
+            }
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button(action: {
@@ -46,7 +48,7 @@ struct MealsView: View {
                         self.addButtonDisabled.toggle()
                     }) {
                         if self.isEditing {
-                            Text("Done")
+                            Text("Gotowe")
                         } else {
                             Image(
                                 systemName: "pencil.circle"
@@ -62,7 +64,7 @@ struct MealsView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing){
                     Button(action: {
-                        addMeal()
+                        isAddMealViewOpen = true
                     }){
                         Image(systemName: "plus.circle")
                     }.disabled(addButtonDisabled)
@@ -86,14 +88,6 @@ struct MealsView: View {
                 ErrorBoundary.shared.setError(error: ErrorType.unkownError)
             }
         }
-    }
-    
-    func addMeal(){
-        let meal = Meal(context: self.viewContext)
-        meal.id = UUID()
-        meal.name = ""
-        
-        try? self.viewContext.save()
     }
 }
 
