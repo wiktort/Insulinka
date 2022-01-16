@@ -12,6 +12,7 @@
 		6428724B275AB489005BC5A5 /* NameInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6428724A275AB489005BC5A5 /* NameInput.swift */; };
 		6428725627614128005BC5A5 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6428725527614128005BC5A5 /* DataController.swift */; };
 		646BB7A22753616100B8D888 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646BB7A12753616100B8D888 /* SettingsView.swift */; };
+		648DB1BD279421B000A0B6AF /* InsulinCalculatorModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648DB1BC279421B000A0B6AF /* InsulinCalculatorModelTests.swift */; };
 		649588EF2774DFC5003854E1 /* MealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649588EE2774DFC5003854E1 /* MealView.swift */; };
 		649588F1277C965B003854E1 /* SectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649588F0277C965B003854E1 /* SectionItem.swift */; };
 		649588F7277E1F92003854E1 /* TextPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649588F6277E1F92003854E1 /* TextPrompt.swift */; };
@@ -22,7 +23,7 @@
 		64AB4CB12737BB31008B0F2D /* Insulinka.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CAF2737BB31008B0F2D /* Insulinka.xcdatamodeld */; };
 		64AB4CD92737C297008B0F2D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CD82737C297008B0F2D /* MainView.swift */; };
 		64AB4CDD2737C2D2008B0F2D /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CDC2737C2D2008B0F2D /* StartView.swift */; };
-		64AB4CE02737E302008B0F2D /* InsulinkaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CBA2737BB31008B0F2D /* InsulinkaTests.swift */; };
+		64AB4CE02737E302008B0F2D /* SettingsModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CBA2737BB31008B0F2D /* SettingsModelTests.swift */; };
 		64AB4CE12737E320008B0F2D /* InsulinkaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CC42737BB31008B0F2D /* InsulinkaUITests.swift */; };
 		64AB4CE22737E323008B0F2D /* InsulinkaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CC62737BB31008B0F2D /* InsulinkaUITestsLaunchTests.swift */; };
 		64B12AA72740F0CB00D80D1A /* InsulinCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B12AA62740F0CB00D80D1A /* InsulinCalculatorView.swift */; };
@@ -61,6 +62,7 @@
 		6428724A275AB489005BC5A5 /* NameInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameInput.swift; sourceTree = "<group>"; };
 		6428725527614128005BC5A5 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		646BB7A12753616100B8D888 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		648DB1BC279421B000A0B6AF /* InsulinCalculatorModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinCalculatorModelTests.swift; sourceTree = "<group>"; };
 		649588EE2774DFC5003854E1 /* MealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		649588F0277C965B003854E1 /* SectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionItem.swift; sourceTree = "<group>"; };
 		649588F6277E1F92003854E1 /* TextPrompt.swift */ = {isa = PBXFileReference; indentWidth = 6; lastKnownFileType = sourcecode.swift; path = TextPrompt.swift; sourceTree = "<group>"; };
@@ -71,7 +73,7 @@
 		64AB4CAB2737BB31008B0F2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64AB4CB02737BB31008B0F2D /* Insulinka.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Insulinka.xcdatamodel; sourceTree = "<group>"; };
 		64AB4CB62737BB31008B0F2D /* InsulinkaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsulinkaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		64AB4CBA2737BB31008B0F2D /* InsulinkaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinkaTests.swift; sourceTree = "<group>"; };
+		64AB4CBA2737BB31008B0F2D /* SettingsModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModelTests.swift; sourceTree = "<group>"; };
 		64AB4CC02737BB31008B0F2D /* InsulinkaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsulinkaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64AB4CC42737BB31008B0F2D /* InsulinkaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinkaUITests.swift; sourceTree = "<group>"; };
 		64AB4CC62737BB31008B0F2D /* InsulinkaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinkaUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -166,7 +168,8 @@
 		64AB4CB92737BB31008B0F2D /* InsulinkaTests */ = {
 			isa = PBXGroup;
 			children = (
-				64AB4CBA2737BB31008B0F2D /* InsulinkaTests.swift */,
+				648DB1BC279421B000A0B6AF /* InsulinCalculatorModelTests.swift */,
+				64AB4CBA2737BB31008B0F2D /* SettingsModelTests.swift */,
 			);
 			path = InsulinkaTests;
 			sourceTree = "<group>";
@@ -410,7 +413,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64AB4CE02737E302008B0F2D /* InsulinkaTests.swift in Sources */,
+				648DB1BD279421B000A0B6AF /* InsulinCalculatorModelTests.swift in Sources */,
+				64AB4CE02737E302008B0F2D /* SettingsModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
