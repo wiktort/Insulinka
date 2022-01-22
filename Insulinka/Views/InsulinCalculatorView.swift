@@ -13,15 +13,11 @@ struct InsulinCalculatorView: View {
     
     var insulinDosePerMealText: String {
         calculatorEngine.insulinDosePerMeal > 0
-        ? String(preciseRound(
-            Double( calculatorEngine.insulinDosePerMeal)
-            ))
+        ? String(calculatorEngine.insulinDosePerMeal)
         : "n/a"
     };
     var insulinDosePer100GText: String {
-        String(preciseRound(
-            Double(calculatorEngine.insulinDosePer100G)
-        ))
+        String(calculatorEngine.insulinDosePer100G)
     }
     
     @State private var isPromptVisible: Bool = false
