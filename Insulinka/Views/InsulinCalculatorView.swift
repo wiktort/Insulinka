@@ -27,49 +27,53 @@ struct InsulinCalculatorView: View {
     }
         
     var body: some View {
-        ZStack{
-            Form {
-                Section{
-                    InsulinCalculator(
-                    proteins: $calculatorEngine.proteins,
-                    fats: $calculatorEngine.fats,
-                    carbs: $calculatorEngine.carbs
-                    )
-                    
-                    HStack{
-                        Button("Wyczyść", action: {
-                            calculatorEngine.fats = nil
-                            calculatorEngine.proteins = nil
-                            calculatorEngine.carbs = nil
-                        })
-                        Spacer()
-                        Button("Zapisz", action: {
-                            isPromptVisible = true
-                        })
-                            .disabled(!calculatorEngine.hasAllProperties)
-                            .foregroundColor(buttonColor)
-                    }.buttonStyle(BorderlessButtonStyle())
+        NavigationView {
+            ZStack{
+                Form {
+                    Section{
+                        InsulinCalculator(
+                        proteins: $calculatorEngine.proteins,
+                        fats: $calculatorEngine.fats,
+                        carbs: $calculatorEngine.carbs
+                        )
+                        
+                        HStack{
+                            Button("Wyczyść", action: {
+                                calculatorEngine.fats = nil
+                                calculatorEngine.proteins = nil
+                                calculatorEngine.carbs = nil
+                            })
+                            Spacer()
+                            Button("Zapisz", action: {
+                                isPromptVisible = true
+                            })
+                                .disabled(!calculatorEngine.hasAllProperties)
+                                .foregroundColor(buttonColor)
+                        }.buttonStyle(BorderlessButtonStyle())
+                            .padding(.top)
+                            .padding(.bottom)
+                    }
+                    Section{
+                        Text("Waga całego dania w gramach")
+                        NumberInput(value: $calculatorEngine.mealWeightInGrams)
+                    }
+                    Section{
+                        Text("Dawka insuliny na 100g daniu: " + insulinDosePer100GText)
+                            .padding()
+                        Text("Dawka insuliny na cały daniu: " + insulinDosePerMealText)
+                            .padding()
+                    }
                 }
-                Section{
-                    Text("Waga całego dania w gramach")
-                    NumberInput(value: $calculatorEngine.mealWeightInGrams)
-                }
-                Section{
-                    Text("Dawka insuliny na 100g daniu: " + insulinDosePer100GText)
-                        .padding()
-                    Text("Dawka insuliny na cały daniu: " + insulinDosePerMealText)
-                        .padding()
-                }
-            }
-            
-            TextPrompt(
-                title: "Zapisz danie",
-                message: "Podaj nazwę dania",
-                isVisible: $isPromptVisible,
-                onDone: addMeal
-            )
-        }.onTapGesture {
-            self.hideKeyboard()
+                
+                TextPrompt(
+                    title: "Zapisz danie",
+                    message: "Podaj nazwę dania",
+                    isVisible: $isPromptVisible,
+                    onDone: addMeal
+                )
+            }.onTapGesture {
+                self.hideKeyboard()
+            }.navigationTitle("Kalkulator")
         }
     }
     

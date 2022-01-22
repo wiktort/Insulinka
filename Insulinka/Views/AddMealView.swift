@@ -39,7 +39,8 @@ struct AddMealView: View {
                     InsulinCalculator(
                         proteins: $calculatorEngine.proteins,
                         fats: $calculatorEngine.fats,
-                        carbs: $calculatorEngine.carbs
+                        carbs: $calculatorEngine.carbs,
+                        hasPaddingBottom: true
                     )
                     
                 }

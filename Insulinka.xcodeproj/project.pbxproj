@@ -34,6 +34,7 @@
 		64C21981277E3B38007F0759 /* InsulinCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C21980277E3B38007F0759 /* InsulinCalculator.swift */; };
 		64C21983277E824C007F0759 /* EditMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C21982277E824C007F0759 /* EditMealView.swift */; };
 		64C21985277EAAE1007F0759 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C21984277EAAE1007F0759 /* MealModel.swift */; };
+		64DB7DAF279C695400F29A3C /* conditionalViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DB7DAE279C695400F29A3C /* conditionalViewModifier.swift */; };
 		64F245A62764A6ED00F3DDA4 /* hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F245A52764A6EC00F3DDA4 /* hideKeyboard.swift */; };
 		64F245AA2764B42900F3DDA4 /* ErrorTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F245A92764B42900F3DDA4 /* ErrorTypes.swift */; };
 		64F245AC2764BC7000F3DDA4 /* ErrorBoundary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F245AB2764BC7000F3DDA4 /* ErrorBoundary.swift */; };
@@ -87,6 +88,7 @@
 		64C21980277E3B38007F0759 /* InsulinCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinCalculator.swift; sourceTree = "<group>"; };
 		64C21982277E824C007F0759 /* EditMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMealView.swift; sourceTree = "<group>"; };
 		64C21984277EAAE1007F0759 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
+		64DB7DAE279C695400F29A3C /* conditionalViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conditionalViewModifier.swift; sourceTree = "<group>"; };
 		64F245A52764A6EC00F3DDA4 /* hideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hideKeyboard.swift; sourceTree = "<group>"; };
 		64F245A92764B42900F3DDA4 /* ErrorTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTypes.swift; sourceTree = "<group>"; };
 		64F245AB2764BC7000F3DDA4 /* ErrorBoundary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorBoundary.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				64F245A52764A6EC00F3DDA4 /* hideKeyboard.swift */,
+				64DB7DAE279C695400F29A3C /* conditionalViewModifier.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				64AB4CDD2737C2D2008B0F2D /* StartView.swift in Sources */,
 				646BB7A22753616100B8D888 /* SettingsView.swift in Sources */,
 				64C21981277E3B38007F0759 /* InsulinCalculator.swift in Sources */,
+				64DB7DAF279C695400F29A3C /* conditionalViewModifier.swift in Sources */,
 				649588F1277C965B003854E1 /* SectionItem.swift in Sources */,
 				649588F7277E1F92003854E1 /* TextPrompt.swift in Sources */,
 				64287249275A9E97005BC5A5 /* TextInput.swift in Sources */,

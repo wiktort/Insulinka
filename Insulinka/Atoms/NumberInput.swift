@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NumberInput: View {
-    var placeholder: String = "Wprowadź wartość";
+    var placeholder: String = "Podaj wartość";
     @Binding var value: Float32?;
     
     var body: some View {

@@ -12,17 +12,44 @@ struct InsulinCalculator: View {
     @Binding  var proteins: Float32?
     @Binding  var fats: Float32?
     @Binding  var carbs: Float32?
-
+    var hasPaddingBottom: Bool = false
+    
     var body: some View {
-        Section {
-            Text("Podaj ilość gram makro składników na 100g dania").padding()
-            Label("Tłuszcze", systemImage: "1.circle")
-            NumberInput(value: $fats)
-            Label("Białka", systemImage: "2.circle")
-            NumberInput(value: $proteins)
-            Label("Węglowodany", systemImage: "3.circle")
-            NumberInput(value: $carbs)
-        }
+        
+            Section {
+                Text("Podaj ilość gram makro składników na 100g dania").padding()
+                GeometryReader { geometry in
+                    HStack {
+                        Label("Tłuszcze", systemImage: "1.circle")
+                            .labelStyle(.titleOnly)
+                        Spacer()
+                        NumberInput(value: $fats)
+                            .frame(width: geometry.size.width * 0.6)
+                    }.frame(height: geometry.size.height)
+                        
+                }.frame(height: 40)
+                GeometryReader { geometry in
+                    HStack {
+                        Label("Białka", systemImage: "2.circle")
+                        .labelStyle(.titleOnly)
+                        Spacer()
+                        NumberInput(value: $proteins)
+                            .frame(width: geometry.size.width * 0.6)
+                    }.frame(height: geometry.size.height)
+                }.frame(height: 40)
+                GeometryReader { geometry in
+                    HStack {
+                        Label("Węglowodany", systemImage: "3.circle")
+                            .labelStyle(.titleOnly)
+                        Spacer()
+                        NumberInput(value: $carbs)
+                            .frame(width: geometry.size.width * 0.6)
+                    }.frame(height: geometry.size.height)
+                }.frame(height: 40)
+                    .if(hasPaddingBottom){view in
+                        view.padding(.bottom)
+                    }
+            }
     }
 }
 

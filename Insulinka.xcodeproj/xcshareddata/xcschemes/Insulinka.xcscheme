@@ -48,6 +48,11 @@
                BlueprintName = "InsulinkaUITests"
                ReferencedContainer = "container:Insulinka.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "T">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>
