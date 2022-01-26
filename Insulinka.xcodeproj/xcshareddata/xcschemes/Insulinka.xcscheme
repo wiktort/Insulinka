@@ -50,6 +50,9 @@
             </BuildableReference>
             <SkippedTests>
                <Test
+                  Identifier = "InsulinkaUITestsLaunchTests">
+               </Test>
+               <Test
                   Identifier = "T">
                </Test>
             </SkippedTests>

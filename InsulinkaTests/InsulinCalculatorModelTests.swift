@@ -90,4 +90,20 @@ class InsulinCalculatorModelTests: XCTestCase {
         // then
         XCTAssertFalse(calculatorEngine.hasAllProperties)
     }
+  
+  func testPerformanceOfComputingInsulinDoses() {
+    measure(
+      metrics: [
+        XCTClockMetric(),
+        XCTCPUMetric(),
+        XCTStorageMetric(),
+        XCTMemoryMetric()
+      ]
+    ) {
+      calculatorEngine.fats = 10.00
+      calculatorEngine.proteins = 10.00
+      calculatorEngine.carbs = 10.00
+      calculatorEngine.mealWeightInGrams = 250.00
+    }
+  }
 }
