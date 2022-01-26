@@ -17,6 +17,7 @@
 		649588F1277C965B003854E1 /* SectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649588F0277C965B003854E1 /* SectionItem.swift */; };
 		649588F7277E1F92003854E1 /* TextPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649588F6277E1F92003854E1 /* TextPrompt.swift */; };
 		649588FB277E377E003854E1 /* AddMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649588FA277E377E003854E1 /* AddMealView.swift */; };
+		64A0931827A07FCC0001B37B /* InsulinCalculatorViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A0931727A07FCB0001B37B /* InsulinCalculatorViewTest.swift */; };
 		64AB4CA52737BB2E008B0F2D /* InsulinkaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CA42737BB2E008B0F2D /* InsulinkaApp.swift */; };
 		64AB4CA92737BB31008B0F2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64AB4CA82737BB31008B0F2D /* Assets.xcassets */; };
 		64AB4CAC2737BB31008B0F2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64AB4CAB2737BB31008B0F2D /* Preview Assets.xcassets */; };
@@ -24,7 +25,7 @@
 		64AB4CD92737C297008B0F2D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CD82737C297008B0F2D /* MainView.swift */; };
 		64AB4CDD2737C2D2008B0F2D /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CDC2737C2D2008B0F2D /* StartView.swift */; };
 		64AB4CE02737E302008B0F2D /* SettingsModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CBA2737BB31008B0F2D /* SettingsModelTests.swift */; };
-		64AB4CE12737E320008B0F2D /* InsulinkaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CC42737BB31008B0F2D /* InsulinkaUITests.swift */; };
+		64AB4CE12737E320008B0F2D /* GeneralUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CC42737BB31008B0F2D /* GeneralUITests.swift */; };
 		64AB4CE22737E323008B0F2D /* InsulinkaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AB4CC62737BB31008B0F2D /* InsulinkaUITestsLaunchTests.swift */; };
 		64B12AA72740F0CB00D80D1A /* InsulinCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B12AA62740F0CB00D80D1A /* InsulinCalculatorView.swift */; };
 		64B12AAA2740F12800D80D1A /* NumberInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B12AA92740F12800D80D1A /* NumberInput.swift */; };
@@ -68,6 +69,7 @@
 		649588F0277C965B003854E1 /* SectionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionItem.swift; sourceTree = "<group>"; };
 		649588F6277E1F92003854E1 /* TextPrompt.swift */ = {isa = PBXFileReference; indentWidth = 6; lastKnownFileType = sourcecode.swift; path = TextPrompt.swift; sourceTree = "<group>"; };
 		649588FA277E377E003854E1 /* AddMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMealView.swift; sourceTree = "<group>"; };
+		64A0931727A07FCB0001B37B /* InsulinCalculatorViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinCalculatorViewTest.swift; sourceTree = "<group>"; };
 		64AB4CA12737BB2E008B0F2D /* Insulinka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insulinka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64AB4CA42737BB2E008B0F2D /* InsulinkaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinkaApp.swift; sourceTree = "<group>"; };
 		64AB4CA82737BB31008B0F2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,7 +78,7 @@
 		64AB4CB62737BB31008B0F2D /* InsulinkaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsulinkaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64AB4CBA2737BB31008B0F2D /* SettingsModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModelTests.swift; sourceTree = "<group>"; };
 		64AB4CC02737BB31008B0F2D /* InsulinkaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InsulinkaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		64AB4CC42737BB31008B0F2D /* InsulinkaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinkaUITests.swift; sourceTree = "<group>"; };
+		64AB4CC42737BB31008B0F2D /* GeneralUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralUITests.swift; sourceTree = "<group>"; };
 		64AB4CC62737BB31008B0F2D /* InsulinkaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsulinkaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		64AB4CD82737C297008B0F2D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		64AB4CDC2737C2D2008B0F2D /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		64C21982277E824C007F0759 /* EditMealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMealView.swift; sourceTree = "<group>"; };
 		64C21984277EAAE1007F0759 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
 		64DB7DAE279C695400F29A3C /* conditionalViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conditionalViewModifier.swift; sourceTree = "<group>"; };
+		64DB7DB0279C728E00F29A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		64F245A52764A6EC00F3DDA4 /* hideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hideKeyboard.swift; sourceTree = "<group>"; };
 		64F245A92764B42900F3DDA4 /* ErrorTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTypes.swift; sourceTree = "<group>"; };
 		64F245AB2764BC7000F3DDA4 /* ErrorBoundary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorBoundary.swift; sourceTree = "<group>"; };
@@ -142,6 +145,7 @@
 		64AB4CA32737BB2E008B0F2D /* Insulinka */ = {
 			isa = PBXGroup;
 			children = (
+				64DB7DB0279C728E00F29A3C /* Info.plist */,
 				64AB4CA82737BB31008B0F2D /* Assets.xcassets */,
 				64B12AA82740F10400D80D1A /* Atoms */,
 				6428725527614128005BC5A5 /* DataController.swift */,
@@ -179,7 +183,8 @@
 		64AB4CC32737BB31008B0F2D /* InsulinkaUITests */ = {
 			isa = PBXGroup;
 			children = (
-				64AB4CC42737BB31008B0F2D /* InsulinkaUITests.swift */,
+				64A0931727A07FCB0001B37B /* InsulinCalculatorViewTest.swift */,
+				64AB4CC42737BB31008B0F2D /* GeneralUITests.swift */,
 				64AB4CC62737BB31008B0F2D /* InsulinkaUITestsLaunchTests.swift */,
 			);
 			path = InsulinkaUITests;
@@ -426,7 +431,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64AB4CE12737E320008B0F2D /* InsulinkaUITests.swift in Sources */,
+				64AB4CE12737E320008B0F2D /* GeneralUITests.swift in Sources */,
+				64A0931827A07FCC0001B37B /* InsulinCalculatorViewTest.swift in Sources */,
 				64AB4CE22737E323008B0F2D /* InsulinkaUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,6 +581,8 @@
 				DEVELOPMENT_TEAM = 9ZP3M85HRR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Insulinka/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Insulinka;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -606,6 +614,8 @@
 				DEVELOPMENT_TEAM = 9ZP3M85HRR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Insulinka/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Insulinka;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

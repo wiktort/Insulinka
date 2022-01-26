@@ -1,14 +1,13 @@
 //
-//  InsulinkaUITests.swift
+//  GeneralUITests.swift
 //  InsulinkaUITests
 //
 //  Created by Wiktor Tumiński on 07/11/2021.
 //
 
 import XCTest
-@testable import Insulinka
 
-class InsulinkaUITests: XCTestCase {
+class GeneralUITests: XCTestCase {
     var app: XCUIApplication!
     let device = XCUIDevice.shared
 
@@ -32,7 +31,7 @@ class InsulinkaUITests: XCTestCase {
 
     func testTabView() throws {
         // given
-        let tabBar = XCUIApplication().tabBars["Tab Bar"]
+        let tabBar = app.tabBars["Tab Bar"]
 
         let startButton = tabBar.buttons["Start"]
         let calculatorButton = tabBar.buttons["Kalkulator"]
