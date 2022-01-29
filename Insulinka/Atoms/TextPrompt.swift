@@ -32,12 +32,14 @@ struct TextPrompt: View {
                               Button("Anuluj", action: {
                                     self.isVisible = false
                                     self.hideKeyboard()
+                                    self.value = ""
                                     self.onCancel()
                               })
                               Button("Potwierdź", action: {
                                     self.isVisible = false
                                     self.hideKeyboard()
                                     self.onDone(self.value)
+                                    self.value = ""
                               })
                         }
                   }

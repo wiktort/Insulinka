@@ -24,7 +24,7 @@ class InsulinCalculatorModel: ObservableObject {
     private var insulinDosePer100GUnrounded: Float32 {
         let proteinDose = (proteins ?? 0.00) * 4 / 100
         let fatDose = (fats ?? 0.00) * 9 / 100
-        let carbohydrateDose = (carbs ?? 0.00) / settings.carbohydrateRatio!
+        let carbohydrateDose = (carbs ?? 0.00) / (settings.carbohydrateRatio ?? 0.00)
 
         return Float32(preciseRound(Double(proteinDose + fatDose + carbohydrateDose), decimals: DecimalPlaces.two))
     }
@@ -36,5 +36,12 @@ class InsulinCalculatorModel: ObservableObject {
     var insulinDosePerMeal: Float32 {
         return Float32(preciseRound(Double(insulinDosePer100GUnrounded * (mealWeightInGrams ?? 0.00)) / 100, decimals: DecimalPlaces.two))
     }
+  
+  func clearProperties(){
+    self.fats = nil
+    self.proteins = nil
+    self.carbs = nil
+    self.mealWeightInGrams = nil
+  }
     
 }

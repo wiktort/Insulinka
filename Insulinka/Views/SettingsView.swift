@@ -11,7 +11,7 @@ struct SettingsView: View {
     @StateObject var settings = SettingsModel.shared;
     @StateObject var errorBoundary = ErrorBoundary.shared;
     
-    @State var canShowAlert: Bool = false
+    @State var shouldShowAlert: Bool = false
     var body: some View {
         NavigationView {
             Form() {
@@ -22,7 +22,7 @@ struct SettingsView: View {
                 Section(header: Text("Ustawienia kalkulatora")){
                     Label("Współczynnik węglowodanowy", systemImage: "doc.text.below.ecg")
                     NumberInput(placeholder: "Wprowadź współczynnik węglowodanowy", value: $settings.carbohydrateRatio)
-                        .alert(isPresented: $canShowAlert){
+                        .alert(isPresented: $shouldShowAlert){
                             return Alert(
                                 title: Text("Error"),
                                 message: Text("\(errorBoundary.errorMessage)"),
@@ -30,12 +30,12 @@ struct SettingsView: View {
                                     settings.setDefaultCarbohydrateRatio()
                                 })
                             )
-                        }
-                }
+                        }.disabled(shouldShowAlert)
+                  }
             }.navigationTitle("Ustawienia")
         }.onTapGesture {
             self.hideKeyboard()
-            self.canShowAlert = errorBoundary.hasError
+            self.shouldShowAlert = errorBoundary.hasError
         }
     }
 }

@@ -10,14 +10,18 @@ import SwiftUI
 struct InsulinCalculatorView: View {
   @Environment(\.managedObjectContext) private var viewContext
   @StateObject var calculatorEngine = InsulinCalculatorModel()
+  // it is unsued but defining it assures that the view reacts to changes in SettingsModel
+  @StateObject var settings = SettingsModel.shared
   
   var insulinDosePerMealText: String {
-    calculatorEngine.insulinDosePerMeal > 0
+    calculatorEngine.insulinDosePerMeal > 0.00
     ? String(calculatorEngine.insulinDosePerMeal)
     : "n/a"
   };
   var insulinDosePer100GText: String {
-    String(calculatorEngine.insulinDosePer100G)
+    calculatorEngine.insulinDosePer100G > 0.00
+    ? String(calculatorEngine.insulinDosePer100G)
+    : "n/a"
   }
   
   @State private var isPromptVisible: Bool = false
@@ -30,19 +34,23 @@ struct InsulinCalculatorView: View {
     NavigationView {
       ZStack{
         Form {
+          
+          InsulinCalculator(
+            proteins: $calculatorEngine.proteins,
+            fats: $calculatorEngine.fats,
+            carbs: $calculatorEngine.carbs,
+            hasPaddingBottom: true
+          )
+          
           Section{
-            InsulinCalculator(
-              proteins: $calculatorEngine.proteins,
-              fats: $calculatorEngine.fats,
-              carbs: $calculatorEngine.carbs
-            )
+            HStack{
+              Label("Waga dania (gram)", systemImage: "none")
+                .labelStyle(.titleOnly)
+              NumberInput(placeholder: "Podaj wagę posiłku", value: $calculatorEngine.mealWeightInGrams)
+            }
             
             HStack{
-              Button("Wyczyść", action: {
-                calculatorEngine.fats = nil
-                calculatorEngine.proteins = nil
-                calculatorEngine.carbs = nil
-              })
+              Button("Wyczyść", action: calculatorEngine.clearProperties)
               Spacer()
               Button("Zapisz", action: {
                 isPromptVisible = true
@@ -52,13 +60,6 @@ struct InsulinCalculatorView: View {
             }.buttonStyle(BorderlessButtonStyle())
               .padding(.top)
               .padding(.bottom)
-          }
-          Section{
-            HStack{
-              Label("Waga dania (gram)", systemImage: "none")
-                .labelStyle(.titleOnly)
-              NumberInput(placeholder: "Podaj wagę posiłku", value: $calculatorEngine.mealWeightInGrams)
-            }
           }
           Section{
             Text("Dawka insuliny na 100g dania: " + insulinDosePer100GText)
